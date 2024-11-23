@@ -1,0 +1,116 @@
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Press Start 2P", system-ui;
+    color: rgb(255, 255, 255);
+    margin-top: 4vw;
+    animation: text-shadow-pop-right;
+}
+
+h2{
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    margin-top: 3vw;
+    text-shadow: 1px 1px black;
+}
+
+h3{
+  font-size: 2rem;
+  font-family: "Archivo Black", sans-serif;
+  text-shadow: 2px 2px black;
+  letter-spacing: 1.3px;
+}
+
+p{
+  font-size: 1.3rem;
+  font-family: "Archivo Black", sans-serif;
+  text-shadow: 1px 1px black;
+  letter-spacing: 1.3px;
+  margin-bottom: 2vw;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Press Start 2P", system-ui;
+    animation: text-shadow-pop-right;
+    transition: 0.8s;
+}
+
+a:hover{
+  color: rgb(189, 189, 189);
+  transition: 0.8s;
+}
+
+.gametitle{
+  font-size: 3rem;
+  margin-bottom: 3vw;
+  animation: tracking-in-expand-fwd-top;
+  text-shadow: 2px 2px black;
+}
+
+//animation classes
+.text-shadow-pop-right {
+	-webkit-animation: text-shadow-pop-right 2s both;
+	        animation: text-shadow-pop-right 2s both;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+//animation keyframes
+@-webkit-keyframes text-shadow-pop-right {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      text-shadow: 1px 0 #555555, 2px 0 #555555, 3px 0 #555555, 4px 0 #555555, 5px 0 #555555, 6px 0 #555555, 7px 0 #555555, 8px 0 #555555;
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes text-shadow-pop-right {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      text-shadow: 1px 0 #555555, 2px 0 #555555, 3px 0 #555555, 4px 0 #555555, 5px 0 #555555, 6px 0 #555555, 7px 0 #555555, 8px 0 #555555;
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+
+
+
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+  
